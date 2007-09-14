@@ -1,0 +1,10 @@
+./README
+./Ops.pm
+./Makefile.PL
+./t/runtests
+./t/test.pl
+./t/minmax.t
+./t/isint.t
+./t/isnum.t
+./t/round.t
+./MANIFEST

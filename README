@@ -1,0 +1,51 @@
+NAME
+    Number::Ops - Simple operations on numbers.
+
+SYNOPSIS
+       use Number::Ops qw(:all);
+
+DESCRIPTION
+    This contains a number of very simple number operations.
+
+ROUTINES
+    randomize, random
+           use Number::Ops qw(:all);
+           randomize;
+           $val = random($range);
+
+        Randomize initializes the random number generator. It will be called
+        automatically if it is not called explicitly. Also, it will only
+        initialize the random number generator one time per session.
+
+        Random returns an integer in the range 0 ... $range-1.
+
+    min, max
+           use Number::Ops qw(:all);
+           $value=min(@list);
+           $value=max(@list);
+
+        Returns the numerical minimum/maximum value of all arguments.
+
+    isnum, isint
+           use Number::Ops qw(:all);
+           $flag=isnum($string [,$low, $high]);
+           $flag=isint($string [,$low, $high]);
+
+        isnum returns 1 if $string is a valid real number with no exponent,
+        0 otherwise. If $low is entered, $string must be >= $low. If $high
+        is entered, $string must be <= $high. It is valid to check only one
+        of the bounds.
+
+        isint is similar but checks integers.
+
+    round
+           $value = round($num [,$dec]);
+
+        Rounds to the closest integer or to $dec number of decimal places.
+
+KNOWN PROBLEMS
+    None at this point.
+
+AUTHOR
+    Sullivan Beck (sbeck@cpan.org)
+

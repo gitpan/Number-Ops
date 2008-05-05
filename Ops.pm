@@ -1,20 +1,15 @@
 package Number::Ops;
-# Copyright (c) 2007-2007 Sullivan Beck. All rights reserved.
+# Copyright (c) 2007-2008 Sullivan Beck. All rights reserved.
 # This program is free software; you can redistribute it and/or modify it
 # under the same terms as Perl itself.
 
 ###############################################################################
-# HISTORY
-###############################################################################
 
-# Version 1.00  2007-09-06
-#    Initial release
-
-$VERSION = "1.00";
-###############################################################################
+$VERSION = "1.01";
 
 require 5.000;
 require Exporter;
+use warnings;
 use Carp;
 
 @ISA = qw(Exporter);
@@ -42,15 +37,16 @@ Number::Ops - Simple operations on numbers.
 
 This contains a number of very simple number operations.
 
-=head1 ROUTINES
-
-=over 4
-
 =cut
 
 ###############################################################################
 ###############################################################################
+
 =pod
+
+=head1 ROUTINES
+
+=over 4
 
 =item randomize, random
 
@@ -198,6 +194,11 @@ sub round {
 
 None at this point.
 
+=head1 LICENSE
+
+This script is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.
+
 =head1 AUTHOR
 
 Sullivan Beck (sbeck@cpan.org)
@@ -206,5 +207,12 @@ Sullivan Beck (sbeck@cpan.org)
 
 1;
 # Local Variables:
+# mode: cperl
 # indent-tabs-mode: nil
+# cperl-indent-level: 3
+# cperl-continued-statement-offset: 2
+# cperl-continued-brace-offset: 0
+# cperl-brace-offset: 0
+# cperl-brace-imaginary-offset: 0
+# cperl-label-offset: -2
 # End:

@@ -8,7 +8,8 @@ DESCRIPTION
     This contains a number of very simple number operations.
 
 ROUTINES
-    randomize, random
+        randomize, random
+
            use Number::Ops qw(:all);
            randomize;
            $val = random($range);
@@ -19,14 +20,16 @@ ROUTINES
 
         Random returns an integer in the range 0 ... $range-1.
 
-    min, max
+        min, max
+
            use Number::Ops qw(:all);
            $value=min(@list);
            $value=max(@list);
 
         Returns the numerical minimum/maximum value of all arguments.
 
-    isnum, isint
+        isnum, isint
+
            use Number::Ops qw(:all);
            $flag=isnum($string [,$low, $high]);
            $flag=isint($string [,$low, $high]);
@@ -38,7 +41,8 @@ ROUTINES
 
         isint is similar but checks integers.
 
-    round
+        round
+
            $value = round($num [,$dec]);
 
         Rounds to the closest integer or to $dec number of decimal places.
@@ -48,4 +52,12 @@ KNOWN PROBLEMS
 
 AUTHOR
     Sullivan Beck (sbeck@cpan.org)
+
+POD ERRORS
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 41:
+        You can't have =items (as at line 49) unless the first thing after
+        the =over is an =item
 

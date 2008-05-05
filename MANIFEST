@@ -1,10 +1,16 @@
-./README
-./Ops.pm
-./Makefile.PL
-./t/runtests
-./t/test.pl
-./t/minmax.t
-./t/isint.t
-./t/isnum.t
-./t/round.t
-./MANIFEST
+Build.PL
+HISTORY
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+Ops.pm
+README
+t/isint.t
+t/isnum.t
+t/minmax.t
+t/pod.t
+t/pod_coverage.t
+t/round.t
+t/runtests
+t/test.pl

@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
 	NAME             => 'Number::Ops',
-	VERSION_FROM     => 'Ops.pm',
+	VERSION	         => '1.02',
 	($] >= 5.005
 	? (ABSTRACT=>'Simple operations on numbers.',
 	   AUTHOR  =>'Sullivan Beck (sbeck@cpan.org)')

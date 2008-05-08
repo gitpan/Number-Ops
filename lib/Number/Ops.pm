@@ -5,7 +5,7 @@ package Number::Ops;
 
 ###############################################################################
 
-$VERSION = "1.01";
+$VERSION = "1.02";
 
 require 5.000;
 require Exporter;
@@ -22,46 +22,7 @@ use Carp;
 
 use strict;
 ###############################################################################
-
-=pod
-
-=head1 NAME
-
-Number::Ops - Simple operations on numbers.
-
-=head1 SYNOPSIS
-
-   use Number::Ops qw(:all);
-
-=head1 DESCRIPTION
-
-This contains a number of very simple number operations.
-
-=cut
-
 ###############################################################################
-###############################################################################
-
-=pod
-
-=head1 ROUTINES
-
-=over 4
-
-=item randomize, random
-
-   use Number::Ops qw(:all);
-   randomize;
-   $val = random($range);
-
-Randomize initializes the random number generator. It will be
-called automatically if it is not called explicitly. Also, it
-will only initialize the random number generator one time per
-session.
-
-Random returns an integer in the range 0 ... $range-1.
-
-=cut
 
 {
    my $randomized = 0;
@@ -79,18 +40,6 @@ sub random {
 }
 
 ########################################################################
-
-=pod
-
-=item min, max
-
-   use Number::Ops qw(:all);
-   $value=min(@list);
-   $value=max(@list);
-
-Returns the numerical minimum/maximum value of all arguments.
-
-=cut
 
 sub min {
   my(@vals)=@_;
@@ -113,23 +62,6 @@ sub max {
 }
 
 ########################################################################
-
-=pod
-
-=item isnum, isint
-
-   use Number::Ops qw(:all);
-   $flag=isnum($string [,$low, $high]);
-   $flag=isint($string [,$low, $high]);
-
-isnum returns 1 if $string is a valid real number with no exponent, 0
-otherwise.  If $low is entered, $string must be >= $low.  If $high is
-entered, $string must be <= $high.  It is valid to check only one of the
-bounds.
-
-isint is similar but checks integers.
-
-=cut
 
 sub isnum {
   my($n,$low,$high)=@_;
@@ -159,16 +91,6 @@ sub isint {
 
 ########################################################################
 
-=pod
-
-=item round
-
-   $value = round($num [,$dec]);
-
-Rounds to the closest integer or to $dec number of decimal places.
-
-=cut
-
 sub round {
   my($num)=shift;
   my($dec)=shift;
@@ -185,25 +107,6 @@ sub round {
 }
 
 ###############################################################################
-###############################################################################
-=pod
-
-=back
-
-=head1 KNOWN PROBLEMS
-
-None at this point.
-
-=head1 LICENSE
-
-This script is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself.
-
-=head1 AUTHOR
-
-Sullivan Beck (sbeck@cpan.org)
-
-=cut
 
 1;
 # Local Variables:

@@ -1,6 +1,6 @@
 ---
 name: Number-Ops
-version: 1.02
+version: 1.03
 author:
   - 'Sullivan Beck <sbeck@cpan.org>'
 abstract: Simple operations on numbers.
@@ -15,7 +15,7 @@ build_requires:
 provides:
   Number::Ops:
     file: lib/Number/Ops.pm
-    version: 1.02
+    version: 1.03
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
